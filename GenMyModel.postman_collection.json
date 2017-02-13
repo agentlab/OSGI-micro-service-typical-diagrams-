@@ -1,0 +1,82 @@
+{
+	"variables": [],
+	"info": {
+		"name": "GenMyModel",
+		"_postman_id": "bd94afdb-35c1-f2f6-5dc1-5323c30f0268",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Hello",
+			"request": {
+				"url": "http://localhost:8080/genmymodel/igenmymodelservice/hello",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "GetSideBar Class",
+			"request": {
+				"url": "http://localhost:8080/genmymodel/igenmymodelservice/getsidebar",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"name\" : \"Diagram\",\r\n\t\"type\" : \"Class-diagram\",\r\n\t\"diagramObjects\" : []\r\n}"
+				},
+				"description": "Test getsidebar method"
+			},
+			"response": []
+		},
+		{
+			"name": "GetSideBar Action",
+			"request": {
+				"url": "http://localhost:8080/genmymodel/igenmymodelservice/getsidebar",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"name\" : \"Diagram\",\r\n\t\"type\" : \"Action-diagram\",\r\n\t\"diagramObjects\" : []\r\n}"
+				},
+				"description": "Test getsidebar method"
+			},
+			"response": []
+		},
+		{
+			"name": "GetSideBar Test",
+			"request": {
+				"url": "http://localhost:8080/genmymodel/igenmymodelservice/getsidebar",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"name\" : \"Diagram\",\r\n\t\"type\" : \"Test-diagram\",\r\n\t\"diagramObjects\" : []\r\n}"
+				},
+				"description": "Test getsidebar method"
+			},
+			"response": []
+		}
+	]
+}
